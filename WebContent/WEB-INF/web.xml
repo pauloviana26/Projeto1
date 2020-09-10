@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Projeto1</display-name>
+	<servlet>
+		<servlet-name>cadastraUsuario</servlet-name>
+		<servlet-class>br.projeto1.controller.CadastrarUsuario</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cadastraUsuario</servlet-name>
+		<url-pattern>/novoUsuario</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>consultaUsuario</servlet-name>
+		<servlet-class>br.projeto1.controller.ConsultarUsuario</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>consultaUsuario</servlet-name>
+		<url-pattern>/consultarUsuario</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>consultarUsuarioAlterar</servlet-name>
+		<servlet-class>br.projeto1.controller.ConsultarUsuarioAlterar</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>consultarUsuarioAlterar</servlet-name>
+		<url-pattern>/consultarUsuarioAlterar</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>alterarUsuario</servlet-name>
+		<servlet-class>br.projeto1.controller.AlterarUsuario</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>alterarUsuario</servlet-name>
+		<url-pattern>/alterarUsuario</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>excluirUsuario</servlet-name>
+		<servlet-class>br.projeto1.controller.ExcluirUsuario</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>excluirUsuario</servlet-name>
+		<url-pattern>/excluirUsuario</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
